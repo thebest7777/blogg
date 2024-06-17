@@ -1,0 +1,9 @@
+<%- include("./partials/header.ejs") %>
+<h1>Welcome to Blogosphere what do you wanna write?</h1>
+<form action="/submit" method="POST">
+  <input name="name" type="text" class="feedback-input" placeholder="Author-Name" />
+  <input name="email" type="text" class="feedback-input" placeholder="Title" />
+  <textarea name="text" class="feedback-input" placeholder="Write your blog here..."></textarea>
+  <input type="submit" value="POST" />
+</form>
+<%- include("./partials/footer.ejs") %>
