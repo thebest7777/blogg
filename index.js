@@ -1,7 +1,7 @@
 import express  from "express";
 import bodyParser from "body-parser";
 const app=express();
-const port=3000;
+// const port=3000;
 let posts=[];
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
@@ -20,6 +20,6 @@ app.post("/submit",(req,res)=>{
     posts.push(obj);
     res.redirect("/");
 });
-app.listen(port,()=>{
-    console.log("The blog is live at "+port);
-});
+// app.listen(port,()=>{
+//     console.log("The blog is live at "+port);
+// });
